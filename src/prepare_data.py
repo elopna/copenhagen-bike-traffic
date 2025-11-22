@@ -463,7 +463,7 @@ def prepare_data_pipeline(
         # Check if 'time' is different from the date column
         if schema["time"] != "time":
             # 'time' is a separate column from the date column
-            time_interval_col = "time"
+        time_interval_col = "time"
             logger.info(f"Found time interval column: {time_interval_col}")
         else:
             logger.info("Column 'time' is the date column, no separate interval column")

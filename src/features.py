@@ -64,8 +64,8 @@ def add_geocenter_distance(df: pd.DataFrame, center_lat: float = None, center_lo
     
     # Compute geocenter only if not provided (i.e., for train)
     if center_lat is None or center_lon is None:
-        center_lat = df["lat"].mean()
-        center_lon = df["lon"].mean()
+    center_lat = df["lat"].mean()
+    center_lon = df["lon"].mean()
         logger.info(f"Computing geocenter: lat={center_lat:.6f}, lon={center_lon:.6f}")
     else:
         logger.info(f"Using provided geocenter: lat={center_lat:.6f}, lon={center_lon:.6f}")
